@@ -155,6 +155,7 @@ ul {
   transition: var(--transtion);
   text-transform: capitalize;
   display: inline-block;
+  height: 2rem;
 }
 .btn:hover {
   background: var(--primary-700);
@@ -862,8 +863,13 @@ Navbar
   border-radius: var(--borderRadius);
 }
 
+.recipe-hero h2 {
+  font-weight: 600;
+  color: var(--primary-200);
+}
+
 .recipe-hero p {
-  color: var(--grey-600);
+  color: var(--primary-200);
 }
 
 .recipe-icons {
@@ -875,24 +881,34 @@ Navbar
 }
 
 .recipe-icons i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--primary-500);
 }
 
 .recipe-icons h5, .recipe-icons p {
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: var(--primary-200)
 }
 
 .recipe-icons p {
-  color: var(--grey-600)
+  color: var(--primary-600)
+}
+
+.bookbtn {
+  height: 2rem;
+  width: 90%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 
 .recipe-tags {
+  color: var(--primary-200);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -905,9 +921,13 @@ Navbar
   text-transform: capitalize;
 }
 
+.recipe-tags a:hover {
+  background: var(--primary-700);
+}
+
 @media screen and (min-width:992px) {
   .recipe-hero {
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 3fr 5fr;
     align-items: center;
   }
 }
@@ -953,7 +973,7 @@ Navbar
 }
 
 .single-instruction > p {
-  color: var(--grey-700);
+  color: var(--primary-200);
 }
 
 .single-instruction header div {
@@ -968,6 +988,7 @@ Navbar
 
 .ingredients h5 {
   margin-bottom: 0;
+  color: var(--primary-500);
 }
 
 .single-ingredient {
@@ -976,9 +997,67 @@ Navbar
   color: var(--primary-500);
 }
 
+.ingredients p {
+  color: var(--primary-200);
+}
+
 .single-tool {
   border-bottom: 2px solid var(--primary-500);
   padding-bottom: 0.75rem;
   color: var(--grey-500);
   text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hall {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-4);
+}
+
+.screen {
+  /* width: 100%; */
+}
+
+.screen-img {
+  box-shadow: var(--shadow-4);
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--primary-700);
+  width: 100%;
+  height: 150px;
+}
+
+.seats {
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  gap: 1rem;
+  /* flex-direction: row; */
+  align-items: center;
+  height: 100%;
+}
+
+.booking-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.hero-and-book {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  row-gap: 2rem;
+  align-items: center;
 }
